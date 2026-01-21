@@ -10,7 +10,7 @@
     type: standard
     state: new
     short_description: "{{ short_description | default(short_description, 'Ticket created by the Ansible + RHACM integration')}}"
-    description: "{{ description | default(short_description, 'Ticket created by the Ansible + RHACM integration. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...')}}
+    description: "{{ description | default(short_description, 'Ticket created by the Ansible + RHACM integration. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...')}}"
     priority: "{{ priority | default(priority, 'moderate')}}"
     risk: "{{ risk | default(risk, 'low')}}"
     impact: "{{ impact | default(impact, 'low')}}"
