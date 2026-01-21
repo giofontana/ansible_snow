@@ -11,9 +11,9 @@
     state: new
     short_description: "{{ short_description | default(short_description, 'Ticket created by the Ansible + RHACM integration')}}"
     description: "{{ description | default(short_description, 'Ticket created by the Ansible + RHACM integration. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...')}}"
-    priority: "{{ priority | default(priority, '2 - High')}}"
+    priority: "{{ priority | default(priority, '2')}}"
     risk: "{{ risk | default(risk, 'Low')}}"
-    impact: "{{ impact | default(impact, '2 - Medium')}}"
+    impact: "{{ impact | default(impact, '2')}}"
   register: output
 - debug:
     var: output
